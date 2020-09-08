@@ -1,0 +1,15 @@
+http://localhost:5001
+
+###
+POST http://localhost:5001
+content-type: application/json
+
+{
+  "slug" : "what",
+  "json" : {
+    "name": "asdasd"
+  }
+}
+
+###
+http://localhost:5001/sadasfas

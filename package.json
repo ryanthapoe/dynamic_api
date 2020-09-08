@@ -1,0 +1,28 @@
+{
+  "name": "dynamic-api",
+  "version": "1.0.0",
+  "description": "Create a dummy api data",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.0.0",
+    "monk": "^7.3.1",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.12",
+    "yup": "^0.29.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ryantha Purba",
+  "license": "MIT"
+}
